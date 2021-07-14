@@ -19,13 +19,13 @@ app.use(helmet());
 require('dotenv').config();
 
 const allowedCors = [
-  'http://wabu-labu-dab-dab.nomoredomains.icu',
-  'http://api.wabu-labu-dab-dab.nomoredomains.icu',
-  'https://wabu-labu-dab-dab.nomoredomains.icu',
-  'https://api.wabu-labu-dab-dab.nomoredomains.icu',
+  'http://cinemaholic.nomoredomains.work',
+  'http://api.cinemaholic.nomoredomains.work',
+  'https://cinemaholic.nomoredomains.work',
+  'https://api.cinemaholic.nomoredomains.work',
   'http://localhost:3001',
-  'https://130.193.46.121',
-  'http://130.193.46.121',
+  'https://178.154.214.36',
+  'http://178.154.214.36',
 ];
 
 app.use((req, res, next) => {
