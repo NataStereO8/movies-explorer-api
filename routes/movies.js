@@ -13,7 +13,6 @@ const validateUrl = (value, helpers) => {
 
 moviesRouter.post('/movies', celebrate({
   body: Joi.object().keys({
-    name: Joi.string().required(),
     country: Joi.string().required(),
     director: Joi.string().required(),
     duration: Joi.number().required(),
@@ -24,7 +23,7 @@ moviesRouter.post('/movies', celebrate({
     nameRU: Joi.string().required(),
     nameEN: Joi.string().required(),
     thumbnail: Joi.string().required().custom(validateUrl),
-    movieId: Joi.string().hex().length(24),
+    movieId: Joi.number(),
   }),
 }), createMovie);
 
