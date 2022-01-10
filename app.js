@@ -26,8 +26,9 @@ const allowedCors = [
   'https://cinemaholic.nomoredomains.work',
   'https://api.cinemaholic.nomoredomains.work',
   'http://localhost:3001',
-  'https://178.154.214.36',
-  'http://178.154.214.36',
+  'http://localhost:3000',
+  'https://84.201.147.130',
+  'http://84.201.147.130',
 ];
 
 app.use((req, res, next) => {
